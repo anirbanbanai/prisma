@@ -16,9 +16,14 @@ const main =async ()=>{
 const post = await prisma.post.createMany({
     data:[
         {
+            title:"title-1",
+            content:"content-1",
+            authorName:"author1"
+        },
+        {
             title:"title-2",
             content:"content-2",
-            authorName:"author1"
+            authorName:"author2"
         },
         {
             title:"title-3",
